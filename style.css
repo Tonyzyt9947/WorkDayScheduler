@@ -69,3 +69,33 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.box {
+  border: #000000 solid 5px;
+  
+}
+
+.hourText{
+  background-color: white;
+  text-align: center;
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.eventText{
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.save{
+  background-color: cyan;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
