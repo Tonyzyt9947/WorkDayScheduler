@@ -59,3 +59,7 @@ This project is licensed under the MIT License
 <br/><br/>
 ## Acknowledgments
 * Lighthouse chrome extension. [Link](https://developers.google.com/web/tools/lighthouse)
+
+* Bootstrap framework. [Link](https://getbootstrap.com/)
+
+* Moment.js [Link](https://momentjs.com/)
