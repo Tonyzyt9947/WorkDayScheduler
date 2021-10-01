@@ -1,6 +1,6 @@
 # Work Scheduler
 
-This project aims to create a work day scheduler. The product should have a running clock displaying date and time in the header, and timeblocks for working hours that are color-coded into categories of past, present and future.
+This project aims to create a work day scheduler. The product should have a running clock displaying date and time in the header, and timeblocks for working hours that are color-coded into categories of past, present and future. The contents of each timeblock can be saved by clicking the save button.
 ​
 ## Getting Started
 ​
@@ -41,7 +41,7 @@ View javascript comments.
 
 ## Demonstration
 
-![Quiz Demo](assets\demo.gif)
+![Quiz Demo](demo.gif)
 
 ## Authors
 
