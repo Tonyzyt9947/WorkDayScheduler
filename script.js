@@ -1,9 +1,17 @@
-// var eventText=document.getElementsByClassName("eventText")
+// Header time change function
+var timeText = document.getElementById("currentDay")
+
+timeText.innerText=moment()
+setInterval(function(){
+    timeText.innerText=moment()
+    },
+    1000)
+
+
+// Select save buttons
 var saveBtn = document.getElementsByClassName("save")
 
-
-
-
+// Save-to-local-storage function
 function save() {
 
     var eventText=document.getElementsByClassName("eventText")
@@ -18,6 +26,7 @@ function save() {
 
 }
 
+// Displays previously saved events
 function display() {
 
     var eventText=document.getElementsByClassName("eventText")
@@ -29,18 +38,25 @@ function display() {
 }
 console.log(saveBtn)
 
-function EL(){
-    
-    for (k=0;k<9;k++){
-    
-        console.log(k)
-        // saveBtn[k].addEventListener("mousedown", save())
-    
+display()
+
+
+// Timeblock color coding
+var containers = document.getElementsByClassName("hourcontainer")
+
+for (k=0;k<9;k++){
+
+    if (k+9<moment().hour()){
+        containers[k].style.backgroundColor = "grey"
     }
 
+    if (k+9==moment().hour()){
+        containers[k].style.backgroundColor = "red"
+    }
+
+    if (k+9>moment().hour()){
+        containers[k].style.backgroundColor = "green"
+    }
+
+    
 }
-
-EL()
-
-
-display()
