@@ -47,15 +47,16 @@ var containers = document.getElementsByClassName("hourcontainer")
 for (k=0;k<9;k++){
 
     if (k+9<moment().hour()){
-        containers[k].style.backgroundColor = "grey"
+        containers[k].style.backgroundColor = "#d3d3d3"
+        
     }
 
     if (k+9==moment().hour()){
-        containers[k].style.backgroundColor = "red"
+        containers[k].style.backgroundColor = "#ff6961"
     }
 
     if (k+9>moment().hour()){
-        containers[k].style.backgroundColor = "green"
+        containers[k].style.backgroundColor = "#77dd77"
     }
 
     
