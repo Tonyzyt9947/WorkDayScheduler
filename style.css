@@ -91,7 +91,8 @@ textarea{
   align-items: center;
   height: 100%;
 }
-.save{
+
+button{
   background-color: cyan;
   font-size: 200%;
   display: flex;

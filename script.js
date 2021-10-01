@@ -7,11 +7,12 @@ var saveBtn = document.getElementsByClassName("save")
 function save() {
 
     var eventText=document.getElementsByClassName("eventText")
+    console.log("saving activate")
     
     for (i=0;i<eventText.length;i++){
-        console.log(eventText[i].value)
+        console.log("saving value: " +eventText[i].value)
         localStorage.setItem("Event"+i, JSON.stringify(eventText[i].value))
-
+        
     }
     
 
@@ -21,11 +22,25 @@ function display() {
 
     var eventText=document.getElementsByClassName("eventText")
 
-    for (i=0;i<9;i++){
-        eventText[i].value=JSON.parse(localStorage.getItem("Event"+i))
-        console.log(JSON.parse(localStorage.getItem("Event"+i)))
+    for (j=0;j<9;j++){
+        eventText[j].value=JSON.parse(localStorage.getItem("Event"+j))
+        console.log("LS getItem: "+JSON.parse(localStorage.getItem("Event"+j)))
     }
 }
+console.log(saveBtn)
 
-save()
+function EL(){
+    
+    for (k=0;k<9;k++){
+    
+        console.log(k)
+        // saveBtn[k].addEventListener("mousedown", save())
+    
+    }
+
+}
+
+EL()
+
+
 display()
